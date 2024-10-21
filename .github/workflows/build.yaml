@@ -26,5 +26,5 @@ jobs:
           context: ./
           push: true
           tags: |
-                kalharacodes/node-app:${{ env.SHORT_SHA }}
-                kalharacodes/node-app:latest
+                {dockerhubUserName/repoName}:${{ env.SHORT_SHA }}
+                {dockerhubUserName/repoName}:latest
