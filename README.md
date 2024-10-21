@@ -1,5 +1,9 @@
 # CI/CD Pipeline with Docker and Github Actions
 
+Here is a comprehensive image of what we are going to implement.
+
+![Untitled-2024-10-21-0950](https://github.com/user-attachments/assets/9fc455cb-3067-4fb0-b4db-9df2962a2d60)
+
 I am trying to use github actions to automate docker builds when a trigger to main branch happens. And also a correct and sustainable tagging has implemented by both the tag with hash and a latest tag.
 
 Therefore I have write the github workflow file like below.
