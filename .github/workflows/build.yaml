@@ -26,5 +26,5 @@ jobs:
           context: ./
           push: true
           tags: |
-                {dockerhubUserName/repoName}:${{ env.SHORT_SHA }}
-                {dockerhubUserName/repoName}:latest
+                {DockerHubUserName/repoName}:${{ env.SHORT_SHA }}
+                {DockerHubUserName/repoName}:latest
