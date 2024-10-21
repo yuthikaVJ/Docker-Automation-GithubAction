@@ -1,4 +1,4 @@
-# CI/CD Pipeline with Docker and Github Actions
+# CI/CD Pipeline with Docker and Github Actions v2
 
 I am trying to use github actions to automate docker builds when a trigger to main branch happens. And also a correct and sudtainable tagging has implemented by both the tag with hash and a latest tag.
 
