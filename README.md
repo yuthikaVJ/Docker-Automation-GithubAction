@@ -47,8 +47,8 @@ jobs:
           context: ./
           push: true
           tags: |
-                kalharacodes/githubactionstest:${{ env.SHORT_SHA }}
-                kalharacodes/githubactionstest:latest
+                {DockerHubUserName/repoName}:${{ env.SHORT_SHA }}
+                {DockerHubUserName/repoName}:latest
 ```
 
 Feel free to play and learn github actions.
