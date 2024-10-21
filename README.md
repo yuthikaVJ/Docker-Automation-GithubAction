@@ -1,8 +1,22 @@
-# CI/CD Pipeline with Docker and Github Actions v2
+# CI/CD Pipeline with Docker and Github Actions
 
-I am trying to use github actions to automate docker builds when a trigger to main branch happens. And also a correct and sudtainable tagging has implemented by both the tag with hash and a latest tag.
+I am trying to use github actions to automate docker builds when a trigger to main branch happens. And also a correct and sustainable tagging has implemented by both the tag with hash and a latest tag.
 
-Therefore I have write the workflow file like below.
+Therefore I have write the github workflow file like below.
+
+## How to Start
+1. Clone this repository.
+2. Run ```npm install``` at the directory of ```nodeapp``` 
+3. Run ```npm index.js``` to test the project.
+4. Inspect the Dockerfile and build it locally first ```docker build -t node-app .```
+5. Then run and test it locally ```docker run -d -p 3000:3000 node-app```
+6. Then inspect the ```build.yaml``` file and make sure to set DOCKERHUB_USERNAME and DOCKERHUB_TOKEN in the secrets section of github project.
+7. Make sure to create the token by logging at dokerhub and replace the DOCKERHUB_TOKEN by it.
+8. Finally replace the ```kalharacodes/node-app``` with relavant to your repository created in dockerhub.
+9. Push the code to github and check for status!
+
+
+Here is the magic, the workflow file which automates all these things.
 
 ```
 name: Build and Push Docker image to Docker Hub
