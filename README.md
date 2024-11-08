@@ -11,7 +11,7 @@ Therefore I have write the github workflow file like below.
 ## How to Start
 1. Clone this repository.
 2. Run ```npm install``` at the directory of ```nodeapp``` 
-3. Run ```npm index.js``` to test the project.
+3. Run ```node index.js``` to test the project.
 4. Inspect the Dockerfile and build it locally first ```docker build -t node-app .```
 5. Then run and test it locally ```docker run -d -p 3000:3000 node-app```
 6. Then inspect the ```build.yaml``` file and make sure to set DOCKERHUB_USERNAME and DOCKERHUB_TOKEN in the secrets section of github project.
